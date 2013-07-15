@@ -6,6 +6,8 @@ movie_name = ""
 def main():
     if len(sys.argv) == 2:
         movie_name = sys.argv[1]
+
+        print("Start download sub from shooter...")
         sub_searcher = Shooter()
         sub_url = sub_searcher.get_sub_url(movie_name)
         sub_downloader.download_sub(sub_url)
